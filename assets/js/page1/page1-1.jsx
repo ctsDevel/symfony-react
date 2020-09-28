@@ -12,10 +12,17 @@ function Button ({start, children}) {
         setCounter((c) => c + 1)
     }
 
+    /*useEffect(() => {
+        window.setInterval(() => {
+            handleClick()
+        }, 1000)
+    })*/
+
     return <button onClick={handleClick}>{children}: {counter}</button>
 }
 
 
 ReactDOM.render(<React.Fragment>
     <Button start={0}>Un bouton</Button>
+    <Button start={20}>Un deuxidème bouton</Button>
 </React.Fragment>, document.querySelector('#js-app'))
