@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello BaseController!{% endblock %}
+
+{% block body %}
+    <div id="js-app"></div>
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('page1') }}
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('page1') }}
+{% endblock %}
